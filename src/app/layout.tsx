@@ -11,6 +11,11 @@ const fredoka = Fredoka({
 export const metadata: Metadata = {
   title: "Kawaii Keyring Designer",
   description: "Design your own custom 3D keyring!",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
