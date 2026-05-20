@@ -31,6 +31,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   height: 100vh;
+  height: 100dvh;
   margin: 0;
   padding: 0;
 }
@@ -46,6 +47,8 @@ body {
   background-attachment: fixed;
   font-family: var(--font-fredoka), sans-serif;
   overflow: hidden; /* Prevent scrolling, app is full screen */
+  position: fixed; /* Prevent bounce on mobile */
+  width: 100%;
 }
 
 a {

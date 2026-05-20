@@ -10,8 +10,9 @@ export default function Home() {
       </div>
 
       <aside className={`${styles.uiPanel} glass-panel`}>
+        <div className={styles.dragHandle} />
         <h1 className={styles.title}>22:22 Keyring</h1>
-        <p style={{ fontSize: 14, opacity: 0.7, textAlign: 'center', marginBottom: 12 }}>
+        <p className={styles.description}>
           Select colors and text for your 3D keyring.
         </p>
 

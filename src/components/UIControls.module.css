@@ -1,0 +1,172 @@
+.controlsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr 1fr; /* Keep 2 columns on small mobile or 1? Let's try 2 first */
+    gap: 8px;
+  }
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.inputColor {
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.inputText {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-weight: bold;
+  outline: none;
+  color: var(--text-main);
+}
+
+.shapeGroup {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.shapeButton {
+  flex: 1;
+  min-width: 60px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+  background: rgba(255,255,255,0.4);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.shapeButtonActive {
+  border-width: 2px;
+  border-color: #b388ff;
+  background: #e8baff;
+}
+
+.charmButton {
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.1s;
+}
+
+.charmButton:active {
+  transform: scale(0.95);
+}
+
+.beadItem {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.6);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.1s;
+}
+
+.beadItem:hover {
+  transform: scale(1.1);
+}
+
+.saveButton {
+  background: linear-gradient(135deg, #ff80ab, #ff4081);
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 64, 129, 0.3);
+  margin-top: 8px;
+  transition: all 0.2s;
+}
+
+.addNameGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.addNameButton {
+  padding: 0 16px;
+  border-radius: 8px;
+  border: none;
+  background: #b388ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.addNameButton:hover {
+  background: #9575cd;
+}
+
+.charmsSection {
+  border-top: 1px solid var(--glass-border);
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.charmsTitle {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-main);
+}
+
+.beadsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  min-height: 50px;
+  align-items: center;
+}
+
+.emptyBeads {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  text-align: center;
+}
